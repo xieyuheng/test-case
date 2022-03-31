@@ -32,6 +32,11 @@ export default class extends TestCase {
 }
 ```
 
+### Subclassing
+
+- Example subclassing: [lexer-test-case.ts](https://github.com/cicada-lang/sexp/blob/master/src/lexer/lexer-test-case.ts)
+- Example test case class: [lexer.case.ts](https://github.com/cicada-lang/sexp/blob/master/src/lexer/lexer.case.ts)
+
 ## Development
 
 ```
