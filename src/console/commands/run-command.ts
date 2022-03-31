@@ -1,6 +1,5 @@
 import { Command } from "@enchanterjs/enchanter/lib/command"
 import { CommandRunner } from "@enchanterjs/enchanter/lib/command-runner"
-import { CommonHelpCommand } from "@enchanterjs/enchanter/lib/commands"
 import ty from "@xieyuheng/ty"
 import { runTestCase } from "../run-test-case"
 
