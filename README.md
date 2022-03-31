@@ -1,5 +1,7 @@
 # Test Case
 
+Minimalist Test Framework for JavaScript/TypeScript.
+
 ## Installation
 
 ```
