@@ -1,5 +1,4 @@
 import Path from "path"
-import { TestCase } from "../test-case"
 
 export async function runTestCase(path: string): Promise<void> {
   const testModule = require(Path.resolve(path))
@@ -19,6 +18,6 @@ export async function runTestCase(path: string): Promise<void> {
   }
 }
 
-// function isSubclassOf(x: any, y: any): boolean {
-//   return x.prototype instanceof y
-// }
+function isSubclassOf(x: any, y: any): boolean {
+  return x.prototype instanceof y
+}
