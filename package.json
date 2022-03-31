@@ -1,7 +1,7 @@
 {
-  "name": "@cicada-lang/sexp",
-  "version": "0.0.19",
-  "repository": "github:cicada-lang/sexp",
+  "name": "@xieyuheng/test-case",
+  "version": "0.0.1",
+  "repository": "github:xieyuheng/test-case",
   "files": [
     "lib"
   ],
