@@ -1,20 +1,8 @@
 import Path from "path"
-import readdirp from "readdirp"
 import { TestCase } from "../test-case"
-import { test } from "../ut/test"
 
-const ROOT = Path.resolve(__dirname, "..")
-
-test("run all test cases", async () => {
-  for (const { path } of await readdirp.promise(ROOT)) {
-    if (path.endsWith("test.js")) {
-      await runTestCase(path)
-    }
-  }
-})
-
-async function runTestCase(path: string): Promise<void> {
-  const testModule = require(Path.resolve(ROOT, path))
+export async function runTestCase(path: string): Promise<void> {
+  const testModule = require(Path.resolve(path))
 
   if (!testModule.default) return
   if (!isSubclassOf(testModule.default, TestCase)) return

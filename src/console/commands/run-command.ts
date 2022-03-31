@@ -2,8 +2,9 @@ import { Command } from "@enchanterjs/enchanter/lib/command"
 import { CommandRunner } from "@enchanterjs/enchanter/lib/command-runner"
 import { CommonHelpCommand } from "@enchanterjs/enchanter/lib/commands"
 import ty from "@xieyuheng/ty"
+import { runTestCase } from "../run-test-case"
 
-type Args = { file?: string }
+type Args = { file: string }
 type Opts = {}
 
 export class RunCommand extends Command<Args, Opts> {
@@ -11,7 +12,7 @@ export class RunCommand extends Command<Args, Opts> {
 
   description = "Run a file which contains a TestCase subclass."
 
-  args = { file: ty.optional(ty.string()) }
+  args = { file: ty.string() }
   opts = {}
 
   // prettier-ignore
@@ -36,6 +37,6 @@ export class RunCommand extends Command<Args, Opts> {
       return
     }
 
-    console.log(argv)
+    await runTestCase(argv.file)
   }
 }
