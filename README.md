@@ -36,10 +36,10 @@ export default class extends TestCase {
 }
 ```
 
-Please see <src/examples> for more examples, including:
+Please see [src/examples](src/examples) for more examples, including:
 
-- <src/examples/assert-equals.case.ts>
-- <src/examples/assert-error.case.ts>
+- [src/examples/assert-equals.case.ts](src/examples/assert-equals.case.ts)
+- [src/examples/assert-error.case.ts](src/examples/assert-error.case.ts)
 
 ### Subclassing
 
