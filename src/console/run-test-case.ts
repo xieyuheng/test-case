@@ -4,8 +4,7 @@ import { TestCase } from "../test-case"
 export async function runTestCase(path: string): Promise<void> {
   const testModule = require(Path.resolve(path))
 
-  if (!testModule.default) return
-  if (!isSubclassOf(testModule.default, TestCase)) return
+  if (!testModule.default?.instanceofTestCase) return
 
   const testCase = new testModule.default()
 
@@ -20,6 +19,6 @@ export async function runTestCase(path: string): Promise<void> {
   }
 }
 
-function isSubclassOf(x: any, y: any): boolean {
-  return x.prototype instanceof y
-}
+// function isSubclassOf(x: any, y: any): boolean {
+//   return x.prototype instanceof y
+// }
