@@ -3,7 +3,7 @@
 ## Installation
 
 ```
-npm @xieyuheng/test-case
+npm install @xieyuheng/test-case
 ```
 
 ## Development
