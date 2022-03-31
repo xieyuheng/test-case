@@ -1,6 +1,6 @@
 {
   "name": "@xieyuheng/test-case",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "repository": "github:xieyuheng/test-case",
   "files": [
     "lib"
