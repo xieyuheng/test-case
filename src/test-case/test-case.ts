@@ -1,8 +1,9 @@
-import { assertEquals, assertNotEquals } from "../ut/assertions"
+import { assert, assertEquals, assertNotEquals } from "../ut/assertions"
 
 export class TestCase {
   static instanceofTestCase = true
 
+  assert = assert
   assertEquals = assertEquals
   assertNotEquals = assertNotEquals
 }

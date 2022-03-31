@@ -10,14 +10,10 @@ export async function runTestCase(path: string): Promise<void> {
   const names = Object.getOwnPropertyNames(Object.getPrototypeOf(testCase))
 
   for (const name of names) {
-    if (name.startsWith("test")) {
+    if (name.startsWith("test") || name.includes(" ")) {
       console.log({ path, name })
       const action = testCase[name].bind(testCase)
       action()
     }
   }
-}
-
-function isSubclassOf(x: any, y: any): boolean {
-  return x.prototype instanceof y
 }

@@ -24,13 +24,13 @@ test-case run lib/examples/number.case.js
 import { TestCase } from "@xieyuheng/test-case"
 
 export default class extends TestCase {
-  ["test add"]() {
+  // NOTE Method name startsWith "test" will be viewed as a test
+  test_add() {
     this.assertEquals(1 + 1, 2)
-    this.assertNotEquals(1 + 1, 3)
   }
 
-  ["test mul"]() {
-    this.assertEquals(3 * 3, 9)
+  "method name includes whitespace will be viewed as a test"() {
+    this.assertNotEquals(1 + 1, 3)
   }
 }
 ```
