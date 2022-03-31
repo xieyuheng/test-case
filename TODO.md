@@ -1,5 +1,4 @@
-- setup command line tool
-- command line runner
+- build `run` command
 - BDD output `given` `when` `then` -- instead of comment
 
 # docs

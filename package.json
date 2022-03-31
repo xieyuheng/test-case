@@ -5,6 +5,9 @@
   "files": [
     "lib"
   ],
+  "bin": {
+    "run-test-case": "bin/run-test-case.js"
+  },
   "scripts": {
     "build": "tsc",
     "watch": "tsc --watch",
