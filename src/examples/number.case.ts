@@ -3,6 +3,7 @@ import { TestCase } from "../test-case"
 export default class extends TestCase {
   ["test add"]() {
     this.assertEquals(1 + 1, 2)
+    this.assertNotEquals(1 + 1, 3)
   }
 
   ["test mul"]() {
