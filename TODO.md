@@ -1,1 +1,4 @@
+- make `assertions` top level
+- clear dependencies
+- move `enchanterjs/enchanter`'s testing commands to `xieyuheng/test-case`
 - BDD output `given` `when` `then` -- instead of comment
