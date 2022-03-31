@@ -36,6 +36,11 @@ export default class extends TestCase {
 }
 ```
 
+Please see [src/examples][] for more examples, including:
+
+- [src/examples/assert-equals.case.ts][]
+- [src/examples/assert-error.case.ts][]
+
 ### Subclassing
 
 - Example subclassing: [lexer-test-case.ts](https://github.com/cicada-lang/sexp/blob/master/src/lexer/lexer-test-case.ts)
