@@ -7,11 +7,12 @@
     "lib"
   ],
   "bin": {
-    "run-test-case": "bin/run-test-case.js"
+    "test-case": "bin/test-case.js"
   },
   "scripts": {
     "build": "tsc",
     "watch": "tsc --watch",
+    "test:test-case": "enchanter test './bin/test-case.js run' 'lib/**/*.case.js'",
     "test:js": "enchanter test node 'lib/**/*.test.js'",
     "test": "npm-run-all test:*",
     "format": "prettier src docs --write"

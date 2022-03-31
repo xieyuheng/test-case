@@ -6,6 +6,32 @@
 npm install @xieyuheng/test-case
 ```
 
+## Usage
+
+### Command line tool
+
+The command line program is called `test-case`.
+
+```
+test-case run lib/examples/number.case.js
+```
+
+## Example
+
+```js
+import { TestCase } from "@xieyuheng/test-case"
+
+export default class extends TestCase {
+  ["test add"]() {
+    this.assertEquals(1 + 1, 2)
+  }
+
+  ["test mul"]() {
+    this.assertEquals(3 * 3, 9)
+  }
+}
+```
+
 ## Development
 
 ```

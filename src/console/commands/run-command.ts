@@ -22,21 +22,12 @@ export class RunCommand extends Command<Args, Opts> {
     return [
       `The ${blue(this.name)} command run a file of TestCase.`,
       ``,
-      blue(`  ${runner.name} ${this.name} lib/parser/parser.test.js`),
-      ``,
-      `It is the default command, thus you can drop the command name.`,
-      ``,
-      blue(`  ${runner.name} lib/parser/parser.test.js`),
+      blue(`  ${runner.name} ${this.name} lib/examples/number.case.js`),
       ``,
     ].join("\n")
   }
 
   async execute(argv: Args & Opts, runner: CommandRunner): Promise<void> {
-    if (!argv.file) {
-      new CommonHelpCommand().execute(argv as any, runner)
-      return
-    }
-
     await runTestCase(argv.file)
   }
 }
