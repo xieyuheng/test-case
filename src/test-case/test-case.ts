@@ -1,9 +1,9 @@
 import {
   assert,
   assertEquals,
-  assertNotEquals,
   assertError,
   assertErrorAsync,
+  assertNotEquals,
 } from "../ut/assertions"
 
 export class TestCase {
