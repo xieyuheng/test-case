@@ -1,4 +1,4 @@
-import { assertEquals, assertNotEquals } from "./assertions"
+import { assertEquals, assertNotEquals } from "../assertions"
 
 {
   const x = [1, 2, new Set([1, 2, [1, 2, 3]])]

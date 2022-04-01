@@ -4,7 +4,7 @@ import {
   assertError,
   assertErrorAsync,
   assertNotEquals,
-} from "../ut/assertions"
+} from "../assertions"
 
 export class TestCase {
   static instanceofTestCase = true

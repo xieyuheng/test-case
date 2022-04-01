@@ -1,5 +1,3 @@
-- make `assertions` top level
-
 # command line tools
 
 - move `enchanterjs/enchanter`'s testing commands to `xieyuheng/test-case`
