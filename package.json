@@ -1,6 +1,6 @@
 {
   "name": "@xieyuheng/test-case",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "repository": "github:xieyuheng/test-case",
   "main": "lib/index.js",
   "files": [
