@@ -1,5 +1,5 @@
 import { Command, CommandRunner } from "@xieyuheng/command-line"
-import ty from "@xieyuheng/ty"
+import { ty } from "@xieyuheng/ty"
 import { runTestCase } from "../run-test-case"
 
 type Args = { file: string }
